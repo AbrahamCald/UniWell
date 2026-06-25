@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uniwelf</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Círculos decorativos -->
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+    <div class="background-circle circle3"></div>
+
+    <div class="login-loader" id="loginLoader" aria-hidden="true">
+        <div class="loader-card">
+            <img src="assets/LogoUniwelf.png" alt="Uniwelf" class="loader-logo">
+            <div class="loader-ring"></div>
+            <h2>Cargando plataforma...</h2>
+            <p>Preparando presentación del proyecto</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Logo -->
+        <div class="character-section">
+            <img src="assets/LogoUniwelf.png"
+                 alt="Logo Uniwelf"
+                 class="character">
+        </div>
+
+        <!-- Formulario -->
+        <div class="form-card">
+
+            <h1>BIENVENIDO</h1>
+
+            <p>
+                Ingrese sus datos para participar en nuestro taller en línea.
+
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Nombre de usuario"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Contraseña"
+                        required>
+                </div>
+
+                <button type="submit" id="nextBtn">
+                    Iniciar sesión
+                </button>
+
+                <div class="extra-links">
+                    <a href="#">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js?v=2"></script>
+
+</body>
+</html>

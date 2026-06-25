@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniwelf | Presentación Web</title>
+    <link rel="icon" type="image/png" href="assets/LogoUniwelf.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="presentacion.css">
+</head>
+<body>
+    <div class="boot-screen" id="bootScreen">
+        <div class="boot-card">
+            <img src="assets/LogoUniwelf.png" alt="Uniwelf" class="boot-logo">
+            <p>Inicializando plataforma...</p>
+            <div class="boot-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div class="stage-progress"><span id="progressBar"></span></div>
+
+    <aside class="side-nav" id="sideNav" aria-label="Navegación de presentación">
+        <a href="#portada" data-section="portada"><span></span>Portada</a>
+        <a href="#problema" data-section="problema"><span></span>Problema</a>
+        <a href="#pregunta" data-section="pregunta"><span></span>Pregunta</a>
+        <a href="#objetivos" data-section="objetivos"><span></span>Objetivos</a>
+        <a href="#variables" data-section="variables"><span></span>Variables</a>
+        <a href="#marco" data-section="marco"><span></span>Marco</a>
+        <a href="#metodologia" data-section="metodologia"><span></span>Metodología</a>
+        <a href="#propuesta" data-section="propuesta"><span></span>Propuesta</a>
+        <a href="#conclusion" data-section="conclusion"><span></span>Cierre</a>
+        <a href="#equipo" data-section="equipo"><span></span>Equipo</a>
+    </aside>
+
+    <header class="topbar">
+        <a href="#portada" class="brand">
+            <img src="assets/LogoUniwelf.png" alt="Uniwelf">
+            <strong>UNIWELF</strong>
+        </a>
+        <div class="top-actions">
+            <button id="presentMode" class="icon-btn" title="Modo presentación"><i class="fa-solid fa-display"></i></button>
+            <button id="menuBtn" class="icon-btn menu-btn" title="Menú"><i class="fa-solid fa-bars"></i></button>
+            <button id="logoutBtn" class="logout">Salir</button>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#portada">Portada</a>
+        <a href="#problema">Problema</a>
+        <a href="#pregunta">Pregunta</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#variables">Variables</a>
+        <a href="#marco">Marco teórico</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#propuesta">Propuesta</a>
+        <a href="#conclusion">Conclusión</a>
+        <a href="#equipo">Equipo</a>
+    </div>
+
+    <main>
+        <section class="slide hero" id="portada" data-title="Portada">
+            <div class="hero-noise"></div>
+            <div class="hero-logo-shell reveal">
+                <img src="assets/LogoUniwelf.png" alt="Logo Uniwelf" class="hero-logo">
+            </div>
+            <div class="hero-content reveal delay-1">
+                <span class="kicker">Proyecto de investigación · II semestre 2026</span>
+                <h1>Plataforma inteligente de apoyo emocional.</h1>
+                <p>Diseño e implementación orientada al manejo de la ansiedad académica en estudiantes de Enfermería de la Universidad Nacional Multidisciplinaria Ricardo Morales Avilés – CUR Masaya.</p>
+                <button class="start-btn" data-next="problema">Comenzar presentación <i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+        </section>
+
+        <section class="slide problem" id="problema" data-title="Problema">
+            <div class="slide-label">01 · Planteamiento del problema</div>
+            <div class="problem-layout">
+                <div class="headline-block reveal">
+                    <h2>La presión académica no siempre se ve, pero sí afecta.</h2>
+                    <p>En Enfermería, la carga teórica, las prácticas clínicas, las evaluaciones y las responsabilidades personales pueden generar estrés, ansiedad, agotamiento emocional y dificultades de concentración.</p>
+                </div>
+                <div class="cause-chain reveal delay-1">
+                    <div><span>01</span><b>Exigencias académicas</b></div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                    <div><span>02</span><b>Sobrecarga y estrés</b></div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                    <div><span>03</span><b>Ansiedad académica</b></div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                    <div><span>04</span><b>Riesgo en bienestar y rendimiento</b></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide question" id="pregunta" data-title="Pregunta">
+            <div class="question-frame reveal">
+                <span>02 · Pregunta de investigación</span>
+                <h3>¿Cómo puede contribuir una plataforma inteligente de apoyo emocional al manejo de la ansiedad académica?</h3>
+                <p>Delimitada en estudiantes de Enfermería del II semestre 2026 de la Universidad Nacional Multidisciplinaria Ricardo Morales Avilés – CUR Masaya.</p>
+            </div>
+        </section>
+
+        <section class="slide objectives" id="objetivos" data-title="Objetivos">
+            <div class="slide-label">03 · Objetivos</div>
+            <div class="objective-map reveal">
+                <div class="objective-core">
+                    <small>Objetivo general</small>
+                    <h3>Diseñar e implementar una plataforma inteligente de apoyo emocional.</h3>
+                    <p>Su finalidad es apoyar el manejo de la ansiedad académica en estudiantes universitarios.</p>
+                </div>
+                <div class="objective-steps">
+                    <article><span>1</span><p>Diagnosticar niveles de ansiedad académica y necesidades de apoyo emocional.</p></article>
+                    <article><span>2</span><p>Diseñar una plataforma con evaluación, seguimiento y orientación.</p></article>
+                    <article><span>3</span><p>Evaluar funcionalidad y contribución en el acompañamiento emocional.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide variables" id="variables" data-title="Variables">
+            <div class="slide-label">04 · Variables del estudio</div>
+            <div class="variables-system reveal">
+                <article>
+                    <small>Variable independiente</small>
+                    <h3>Plataforma inteligente de apoyo emocional</h3>
+                    <p>Sistema web con evaluación emocional, recomendaciones, seguimiento, ejercicios de relajación y orientación digital.</p>
+                </article>
+                <div class="influence-line"><span>Influye en</span></div>
+                <article>
+                    <small>Variable dependiente</small>
+                    <h3>Manejo de la ansiedad académica</h3>
+                    <p>Capacidad del estudiante para identificar, comprender y aplicar estrategias de afrontamiento ante exigencias académicas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="slide theory" id="marco" data-title="Marco teórico">
+            <div class="slide-label">05 · Marco teórico</div>
+            <div class="theory-layout">
+                <div class="headline-block reveal">
+                    <h3>Un marco conceptual conectado.</h3>
+                    <p>El proyecto articula salud mental, ansiedad académica, bienestar emocional, plataformas inteligentes y apoyo digital.</p>
+                </div>
+                <div class="concept-map reveal delay-1">
+                    <div class="node main">Uniwelf</div>
+                    <div class="node n1">Salud mental</div>
+                    <div class="node n2">Ansiedad académica</div>
+                    <div class="node n3">Bienestar emocional</div>
+                    <div class="node n4">Tecnología</div>
+                    <div class="node n5">Modelo TAM</div>
+                    <div class="map-lines"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide methodology" id="metodologia" data-title="Metodología">
+            <div class="slide-label">06 · Diseño metodológico</div>
+            <div class="method-head reveal">
+                <h3>Ruta de trabajo para pasar de la investigación a la implementación.</h3>
+                <div class="method-tags">
+                    <span>Enfoque mixto / aplicado</span>
+                    <span>Tipo descriptivo y tecnológico</span>
+                    <span>Población: Enfermería</span>
+                    <span>Periodo: II semestre 2026</span>
+                </div>
+            </div>
+            <div class="roadmap reveal delay-1">
+                <article><span>01</span><h3>Diagnóstico</h3><p>Identificar niveles de ansiedad y necesidades de apoyo.</p></article>
+                <article><span>02</span><h3>Diseño</h3><p>Definir interfaz, módulos, flujo de usuario y criterios funcionales.</p></article>
+                <article><span>03</span><h3>Implementación</h3><p>Construir evaluación, seguimiento y recomendaciones.</p></article>
+                <article><span>04</span><h3>Evaluación</h3><p>Valorar usabilidad, funcionalidad y aporte emocional.</p></article>
+            </div>
+        </section>
+
+        <section class="slide product" id="propuesta" data-title="Propuesta">
+            <div class="slide-label">07 · Propuesta tecnológica</div>
+            <div class="product-layout">
+                <div class="app-window reveal">
+                    <div class="window-bar"><span></span><span></span><span></span><b>uniwelf.app</b></div>
+                    <div class="app-content">
+                        <aside>
+                            <img src="assets/LogoUniwelf.png" alt="Uniwelf">
+                            <a class="active">Inicio</a>
+                            <a>Test</a>
+                            <a>Historial</a>
+                            <a>Recomendaciones</a>
+                        </aside>
+                        <section>
+                            <small>Estado emocional</small>
+                            <h3>Seguimiento preventivo</h3>
+                            <div class="status-card"><b>Nivel moderado</b><span>Recomendación: respiración guiada + pausa activa</span></div>
+                            <div class="mini-dashboard">
+                                <div>Test psicológico</div>
+                                <div>Historial emocional</div>
+                                <div>Chatbot básico</div>
+                                <div>Relajación guiada</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="headline-block reveal delay-1">
+                    <h3>La propuesta se presenta como una herramienta real, no solo como una idea.</h3>
+                    <p>Uniwelf integra autoevaluación, seguimiento emocional, recomendaciones básicas, ejercicios de relajación y orientación digital.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="slide conclusion" id="conclusion" data-title="Conclusión">
+            <div class="conclusion-box reveal">
+                <span>08 · Conclusión / avances</span>
+                <h3>La tecnología puede convertirse en un puente para fortalecer el bienestar emocional estudiantil.</h3>
+                <p>Como avance, se cuenta con login funcional, presentación web, identidad visual, módulos definidos, diseño responsive y propuesta de plataforma.</p>
+                <button class="start-btn" data-next="portada">Volver al inicio <i class="fa-solid fa-arrow-up"></i></button>
+            </div>
+        </section>
+
+        <section class="slide team-slide" id="equipo" data-title="Equipo">
+            <div class="slide-label">09 · Equipo del proyecto</div>
+            <div class="team-intro reveal">
+                <h2>Integrantes del proyecto.</h2>
+                <p>Trabajo colaborativo entre Ingeniería en Sistemas y Psicología.</p>
+            </div>
+            <div class="team-grid reveal delay-1">
+                <article>
+                    <img src="assets/persona1.jpg" alt="Wainer Abraham Calderon Ampie">
+                    <h3>Wainer Abraham Calderon Ampie</h3>
+                    <p>Ingeniería en Sistemas de Información Automatizada</p>
+                    <div><a href="https://www.facebook.com/WagnerCald/" target="_blank"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/abrahamcald10" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/50588342164" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </article>
+                <article>
+                    <img src="assets/Persona2.jpg" alt="Madeling Yubelca Mejia Garcia">
+                    <h3>Madeling Yubelca Mejia Garcia</h3>
+                    <p>Licenciatura en Psicología</p>
+                    <div><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/50576972090" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </article>
+                <article>
+                    <img src="assets/persona3.jpg" alt="Jorge Luis Gomez Rafael">
+                    <h3>Jorge Luis Gomez Rafael</h3>
+                    <p>Licenciatura en Psicología</p>
+                    <div><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/50575534082" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="section-controls">
+        <button id="prevSection"><i class="fa-solid fa-arrow-up"></i></button>
+        <span id="sectionCounter">1/10</span>
+        <button id="nextSection"><i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+    <script src="presentacion.js"></script>
+</body>
+</html>
