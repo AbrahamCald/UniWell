@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const contrasena = limpiarTexto(document.getElementById("contrasena").value);
 
         btn.innerHTML = "Verificando...";
-        btn.style.opacity = "0.8";
+        btn.style.opacity = "0.15";
         btn.disabled = true;
 
         setTimeout(() => {
-            if (usuario === "Admin" && contrasena === "12345") {
+            if (usuario === "admin" && contrasena === "12345") {
                 sessionStorage.setItem("uniwell_access", "granted");
 
                 btn.innerHTML = "Acceso Correcto ✓";
