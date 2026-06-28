@@ -1,7 +1,7 @@
 // ================================
 // LOGIN UNIWELF / UNIWELL
-// Usuario: Psicología
-// Contraseña: Ingeniería
+// Usuario: Admin
+// Contraseña: 12345
 // ================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.disabled = true;
 
         setTimeout(() => {
-            if (usuario === "psicologia" && contrasena === "ingenieria") {
+            if (usuario === "Admin" && contrasena === "12345") {
                 sessionStorage.setItem("uniwell_access", "granted");
 
                 btn.innerHTML = "Acceso Correcto ✓";
